@@ -1,4 +1,4 @@
-import { zodResolver } from "@hookform/resolvers/zod/src/zod.js";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { Button, TextInput } from "flowbite-react";
 import { useForm } from "react-hook-form";
 import { IoPersonSharp } from "react-icons/io5";
@@ -18,7 +18,7 @@ export default function Login() {
   if (!context) {
     throw new Error('')
   }
-  const { isLogin, setLogin ,setUser } = context
+  const { setLogin ,setUser } = context
 
   const {
     handleSubmit,
